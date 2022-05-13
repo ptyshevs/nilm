@@ -18,9 +18,10 @@ def plot_rnn_forecast(df, title=None):
     fig.show()
 
 
-def plot_sample_sequences(X, n: int = 3, columns=None):
+def plot_sample_sequences(X, n: int = 3, columns=None, random_seed=None):
     """Plot some of the sequences"""
-    
+    if random_seed is not None:
+        np.random.seed(random_seed)
     idx = np.random.randint(0, len(X), size=n)
     for i in idx:
         sample_seq = X[i]
