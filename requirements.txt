@@ -1,0 +1,9 @@
+tqdm
+jupyterlab
+ipywidgets
+pandas
+numpy
+scipy
+plotly
+ydata_synthetic
+scikit-learn
